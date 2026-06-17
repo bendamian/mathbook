@@ -1,0 +1,21 @@
+<!-- Login/Signup Modal  -->
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<div class="flex items-center justify-center min-h-screen bg-gray-100">
+
+  <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
+
+    <h1 class="text-2xl font-bold text-center mb-6">
+      {% block auth_title %}{% endblock %}
+    </h1>
+
+    {% block entrance_content %}
+    {% endblock %}
+
+  </div>
+
+</div>
+{% endblock %}

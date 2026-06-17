@@ -1,0 +1,14 @@
+{% extends "account/base_entrance.html" %}
+
+{% block auth_title %}
+Sign In
+
+{% endblock %}
+
+{% block entrance_content %}
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Login</button>
+</form>
+{% endblock %}
